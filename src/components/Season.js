@@ -49,18 +49,18 @@ function Season(props){
   return (
     <div id="season-div">
       <h2>{availableProduce[props.month].month}</h2>
-      <ul>
+      <ul id="calendar">
         {emptyDays().map((day,index) => 
-          <li key={`emptyDay${index}`}>{day}</li>
+          <li class="day" key={`emptyDay${index}`}>{day}</li>
         )}
         {regularDays().map((weekday, index) =>
-          <li key={`day${index}`}><Day weekday={weekday}/></li>
+          <li class="day" key={`day${index}`}><Day weekday={weekday}/></li>
         )}
       </ul>
-      <ul>
-        <h4>Available Produce:</h4>
+      <ul id="produce-ul">
+        <h4>Available Produce This Month:</h4>
         {availableProduce[props.month].selection.map((produce, index) =>
-          <li key={index}>{produce}</li>
+          <li class="produce" key={index}>{produce}</li>
         )}
       </ul>
     </div>

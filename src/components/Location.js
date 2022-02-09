@@ -42,7 +42,7 @@ const marketSchedule = [
 function Location(props){
   return (
     <div id="locationDiv">
-      <h3>The day is: {marketSchedule[props.dayOfWeek].day}</h3>
+      <h3>Today is: {marketSchedule[props.dayOfWeek].day}</h3>
       <h3>Location for today: {marketSchedule[props.dayOfWeek].location}</h3>
       <h4>Time: {marketSchedule[props.dayOfWeek].hours}</h4>
       <h4>Booth number: {marketSchedule[props.dayOfWeek].booth}</h4>

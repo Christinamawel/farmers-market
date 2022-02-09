@@ -34,7 +34,7 @@ const marketSchedule = [
   },
   {  
     day: "Friday",
-    location: "",
+    location: "Day off",
     hours: "",
     booth: ""
   },
@@ -45,7 +45,7 @@ const marketSchedule = [
     booth: "9G"
   },
   {  
-    day: "empty day",
+    day: "",
     location: "",
     hours: "",
     booth: ""
@@ -54,11 +54,11 @@ const marketSchedule = [
 
 function Day(props) {
   return (
-    <div id="day-div">
+    <React.Fragment>
       <h3>{marketSchedule[props.weekday].day}</h3>
       <h4>{marketSchedule[props.weekday].location}</h4>
       <h4>{marketSchedule[props.weekday].hours} {marketSchedule[props.weekday].booth}</h4>
-    </div>
+    </React.Fragment>
   )
 }
 

@@ -52,8 +52,10 @@ class App extends React.Component {
         <h1>Avery's Organics</h1>
         <Location dayOfWeek={DayOfWeek}/>
         <Season month={Month} year={Year}/>
+        <div id="buttons-div">
         <button onClick={this.backClick}>back</button>
-        <button onClick={this.nextClick}>next</button>
+        <button id="next-btn" onClick={this.nextClick}>next</button>
+        </div>
       </React.Fragment>
     );
   }
